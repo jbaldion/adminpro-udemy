@@ -1,3 +1,34 @@
-<p>
-  graficas1 works!
-</p>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-grafica-dona [datos]="graficos.grafico1.data" [labels]="graficos.grafico1.labels" [leyenda]="graficos.grafico1.leyenda" [tipo]="graficos.grafico1.type"></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-grafica-dona [datos]="graficos.grafico2.data" [labels]="graficos.grafico2.labels" [leyenda]="graficos.grafico2.leyenda" [tipo]="graficos.grafico2.type"></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-title">{{graficos.grafico3.leyenda}}</div>
+            <div class="card-body">
+                <app-grafica-dona [datos]="graficos.grafico3.data" [labels]="graficos.grafico3.labels" [leyenda]="graficos.grafico3.leyenda" [tipo]="graficos.grafico3.type"></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-grafica-dona [datos]="graficos.grafico4.data" [labels]="graficos.grafico4.labels" [leyenda]="graficos.grafico4.leyenda" [tipo]="graficos.grafico4.type"></app-grafica-dona>
+            </div>
+        </div>
+    </div>
+
+</div>
